@@ -1,0 +1,58 @@
+@mixin transition($time){
+  -webkit-transition: all $time ease;
+          transition: all $time ease;
+}
+
+.site-header{
+  height: 94px;
+  background: #473a2d;
+  .brand{
+    margin-top: 25px;
+    display: inline-block;
+  }
+  .site-nav{
+    float: right;
+    margin-top: 15px;
+    .navigation{
+      line-height: 61px;
+      border-right: 1px #fff solid;
+      padding-right: 15px;
+      display: inline-block;
+      ul{
+        li{
+          display: inline-block;
+          line-height: 43px;
+          padding: 0 15px;
+          @include transition(.2s);
+          &:hover{
+            background: #5b4d3b;
+          }
+          a{
+            display: inline-block;
+            font-size: 15px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .languages{
+      display: inline-block;
+      margin-left: 15px;
+      ul{
+        li{
+          display: inline-block;
+          line-height: 43px;
+          a{
+            @include transition(.2s);
+            color: #fff;
+            margin: 0 7px;
+            font-size: 13px;
+            &:hover{
+              color: #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+}
