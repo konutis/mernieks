@@ -3,5 +3,70 @@
   background: url("../_temp/slider_bg1.png");
   background-size: cover;
   background-position: center; }
+  .carousel-container .carousel {
+    position: relative; }
+    .carousel-container .carousel .carousel-inner {
+      position: relative;
+      height: 594px;
+      margin: 0 85px; }
+      .carousel-container .carousel .carousel-inner .item {
+        display: none;
+        position: absolute;
+        color: #f5f2eb; }
+        .carousel-container .carousel .carousel-inner .item.active {
+          display: block; }
+        .carousel-container .carousel .carousel-inner .item.item-1 {
+          top: 250px;
+          left: 0; }
+        .carousel-container .carousel .carousel-inner .item.item-2 {
+          top: 225px;
+          left: 15px; }
+        .carousel-container .carousel .carousel-inner .item.item-3 {
+          text-align: right;
+          top: 250px;
+          right: 0; }
+        .carousel-container .carousel .carousel-inner .item h1 {
+          font-size: 44px;
+          font-weight: normal;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 5px 15px;
+          margin: 20px 0;
+          display: inline-block; }
+        .carousel-container .carousel .carousel-inner .item > div {
+          background: rgba(0, 0, 0, 0.5);
+          padding: 11px 17px; }
+          .carousel-container .carousel .carousel-inner .item > div p {
+            margin: 0;
+            line-height: 38px;
+            font-size: 24px; }
+    .carousel-container .carousel .carousel-navigation {
+      position: absolute;
+      top: 50%; }
+      .carousel-container .carousel .carousel-navigation.left {
+        left: 0; }
+      .carousel-container .carousel .carousel-navigation.right {
+        right: 0; }
+    .carousel-container .carousel .control-buttons {
+      position: absolute;
+      bottom: 13px;
+      left: 50%;
+      margin-left: -37px; }
+      .carousel-container .carousel .control-buttons button {
+        box-sizing: inherit;
+        position: relative;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.2);
+        margin: 5px; }
+        .carousel-container .carousel .control-buttons button.active:before {
+          content: "";
+          background: rgba(255, 200, 145, 0.4);
+          height: 10px;
+          width: 10px;
+          position: absolute;
+          border-radius: 50%;
+          top: 2px;
+          left: 2px; }
 
 /*# sourceMappingURL=carousel.css.map */
