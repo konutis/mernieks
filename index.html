@@ -10,9 +10,12 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/base.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
 </head>
 <body>
-<header class="site-header">
+<header class="site-header nav-down">
     <div class="wrapper">
         <a href="" class="brand">
             <img src="./_temp/brand_logo.png" alt="" />
@@ -26,17 +29,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#services">
                             <span>Pakalpojumi</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#about-us">
                             <span>Par mums</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#clients">
                             <span>Klienti</span>
                         </a>
                     </li>
@@ -93,10 +96,10 @@
             </div>
             <!--Controls-->
             <a class="left carousel-navigation" href="#">
-                <img src="./_temp/arrow_left.png" alt="Left">
+                <img src="./img/arrow_left.png" alt="Left">
             </a>
             <a class="right carousel-navigation"  href="#">
-                <img src="./_temp/arrow_right.png" alt="Right">
+                <img src="./img/arrow_right.png" alt="Right">
             </a>
             <div class="control-buttons">
                 <button>
@@ -109,5 +112,179 @@
         </div>
     </div>
 </div>
+
+<section class="services site-section">
+    <div class="wrapper">
+        <h1 class="section-header">Pakalpojumi <div class="anchor" id="services"></div></h1>
+        <ul class="service-list">
+            <li>
+                <img src="./_temp/icon1.png" alt="">
+                <div>
+                    <h2>Ģeodēzija</h2>
+                    <ul>
+                        <li>
+                            <span>Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</span>
+                        </li>
+                        <li>
+                            <span>Apakšzemes komunikāciju uzmērīšana un saskaņošana;</span>
+                        </li>
+                        <li>
+                            <span>Situācijas uzmērīšana;</span>
+                        </li>
+                        <li>
+                            <span>Būvasu nospraušana;</span>
+                        </li>
+                        <li>
+                            <span>Konstrukciju novietojuma pārbaude.</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="./_temp/icon2.png" alt="">
+                <div>
+                    <h2>Mērniecība</h2>
+                    <ul>
+                        <li>
+                            <span>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</span>
+                        </li>
+                        <li>
+                            <span>Zemesgabalu robežu noteikšana dabā;</span>
+                        </li>
+                        <li>
+                            <span>Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;</span>
+                        </li>
+                        <li>
+                            <span>Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes;</span>
+                        </li>
+                        <li>
+                            <span>Meža transformējamo platību uzmērīšana;</span>
+                        </li>
+                        <li>
+                            <span>Robežstigu un vizūru noteikšana;</span>
+                        </li>
+                        <li>
+                            <span>Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <img src="./_temp/icon2.png" alt="">
+                <div>
+                    <h2>Zemes ierīcība</h2>
+                    <ul>
+                        <li>
+                            <span>Zemes ierīcības projektu izstrāde;</span>
+                        </li>
+                        <li>
+                            <span>Zemes ierīcības projektu saskaņošana.</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="prices site-section">
+    <div class="wrapper">
+        <h1 class="section-header">Pakalpojumu izcenojumi</h1>
+        <div class="price-table cf">
+            <div>
+                <p>Par topogrāfiskās informācijas izsniegšanu (tajā skaitā ielu sarkano līniju), pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:</p>
+                <ul class="price-list">
+                    <li>
+                        <span><strong>Pakalpojums</strong></span>
+                        <p>EUR</p>
+                    </li>
+                    <li class="highlight border-top">
+                        <span>pie objekta platības līdz 0.3 ha (ieskaitot), viens objekts</span>
+                        <p>21,34</p>
+                    </li>
+                    <li>
+                        <span>pie objekta platības virs 0.3 ha līdz 0.5 ha (ieskaitot), viens objekts</span>
+                        <p>24,19</p>
+                    </li>
+                    <li class="highlight">
+                        <span>pie objekta platības virs 0.5 ha līdz 1.0 ha (ieskaitot), viens objekts</span>
+                        <p>31,30</p>
+                    </li>
+                    <li class="border-bottom">
+                        <span>pie objekta platības virs 1.0 ha, papildus par katru nākamo ha,</span>
+                        <span class="light-text">bet ne vairāk kā  135.17 EUR kopā par vienu objektu</span>
+                        <p>10,67</p>
+                    </li>
+                    <li>
+                        <span>objektos, kuros ir 2 (divas) vai mazāk apakšzemes komunikācijas, tāmei tiek piemērots koeficients 0.8</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <p>
+                    Par izpilddokumentācijas (tajā skaitā inženierkomunikāciju un ceļu izpildmērījumi) pieņemšanu, pārbaudi, ievadīšanu datu planšetēs, ievadīšanu datubāzē, reģistrēšanu un nosūtīšanu pašvaldībai:
+                </p>
+                <ul class="price-list">
+                    <li>
+                        <span><strong>Pakalpojums</strong></span>
+                        <p>EUR</p>
+                    </li>
+                    <li class="highlight border-top">
+                        <span>pie trases garuma līdz 300 m, viens objekts</span>
+                        <p>21,34</p>
+                    </li>
+                    <li>
+                        <span>pie trases garuma virs 300 m, papildus par katriem nākamajiem 100 m, bet ne vairāk kā 135.17 EUR kopā par vienu objektu</span>
+                        <p>24,19</p>
+                    </li>
+                    <li class="highlight border-top special">
+                        <span>Par vienreizēju topogrāfiskās informācijas sagatavošanu un izsniegšanu digitālā formā (objekta platība tiek noteikta pa pieprasīto kontūru):</span>
+                    </li>
+                    <li>
+                        <span>objekta platība līdz 25ha (ieskaitot), viens objekts</span>
+                        <p>2,85</p>
+                    </li>
+                    <li class="highlight">
+                        <span>objekta platība virs 25ha, papildus par katru nākamo ha</span>
+                        <p>0,07</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-us site-section">
+    <div class="wrapper">
+        <h1 class="section-header">Par mums<div class="anchor" id="about-us"></div></h1>
+    </div>
+</section>
+
+<section class="clients site-section">
+    <div class="wrapper">
+        <h1 class="section-header">Klienti<div class="anchor" id="clients"></div></h1>
+        <ul class="client-list">
+            <li>
+                <img src="./_temp/client_logo1.png" alt="Latvijas Republikas Zemkopības Ministrija">
+            </li>
+            <li>
+                <img src="./_temp/client_logo2.png" alt="Latvijas Valsts Meži">
+            </li>
+            <li>
+                <img src="./_temp/client_logo3.png" alt="Gibson">
+            </li>
+            <li>
+                <img src="./_temp/client_logo4.png" alt="Business Builder">
+            </li>
+            <li>
+                <img src="./_temp/client_logo5.png" alt="Baltic Sustainable Forestry">
+            </li>
+        </ul>
+    </div>
+</section>
+
 </body>
 </html>

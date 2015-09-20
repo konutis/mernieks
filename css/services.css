@@ -1,0 +1,39 @@
+.services .service-list {
+  padding: 50px 0 45px;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  background-image: url(../_temp/body_bg.png); }
+  .services .service-list > li {
+    display: inline-block;
+    text-align: left; }
+    .services .service-list > li > img {
+      vertical-align: top; }
+    .services .service-list > li > div {
+      display: inline-block;
+      max-width: 290px;
+      margin-left: 20px; }
+      .services .service-list > li > div h2 {
+        margin: 0 0 15px 0;
+        color: #473a15;
+        text-transform: uppercase; }
+      .services .service-list > li > div ul li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px; }
+        .services .service-list > li > div ul li span {
+          line-height: 24px;
+          color: #534c38;
+          font-family: open_sanslight; }
+        .services .service-list > li > div ul li:after {
+          content: "";
+          position: absolute;
+          width: 56px;
+          height: 1px;
+          background: rgba(0, 0, 0, 0.2);
+          bottom: -1px;
+          left: 0; }
+        .services .service-list > li > div ul li:last-child:after {
+          display: none; }
+
+/*# sourceMappingURL=services.css.map */

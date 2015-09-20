@@ -1,6 +1,14 @@
 .site-header {
   height: 94px;
-  background: #473a2d; }
+  background: #473a2d;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: top 0.2s ease-in-out; }
+  .site-header.nav-up {
+    top: -94px; }
   .site-header .brand {
     margin-top: 25px;
     display: inline-block; }
