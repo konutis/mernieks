@@ -1,6 +1,7 @@
 body {
   font-family: open_sansregular, Arial, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
 
 .wrapper {
   max-width: 1200px;
@@ -38,5 +39,43 @@ button {
     text-transform: uppercase;
     border-bottom: 1px #736357 dotted;
     margin: 0; }
+
+.styled-input {
+  outline: 0;
+  background: #7f6c42;
+  border: 0;
+  font-size: 12px;
+  color: #f9e09e;
+  padding: 8px 8px;
+  width: 196px;
+  margin-bottom: 23px;
+  box-sizing: border-box; }
+  .styled-input::-webkit-input-placeholder {
+    color: #b1965c; }
+  .styled-input:-moz-placeholder {
+    color: #b1965c; }
+  .styled-input::-moz-placeholder {
+    color: #b1965c; }
+  .styled-input:-ms-input-placeholder {
+    color: #b1965c; }
+
+.styled-textarea {
+  outline: 0;
+  background: #7f6c42;
+  border: 0;
+  font-size: 12px;
+  color: #f9e09e;
+  resize: none;
+  padding: 8px 8px;
+  width: 410px;
+  box-sizing: border-box; }
+  .styled-textarea::-webkit-input-placeholder {
+    color: #b1965c; }
+  .styled-textarea:-moz-placeholder {
+    color: #b1965c; }
+  .styled-textarea::-moz-placeholder {
+    color: #b1965c; }
+  .styled-textarea:-ms-input-placeholder {
+    color: #b1965c; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,70 @@
+.site-footer{
+  background: url(../_temp/about_us_bg.png);
+  .section-header{
+    border-bottom-color: #c6a357;
+  }
+  .contact-info{
+    text-align: left;
+    padding: 50px 0 80px;
+    iframe{
+      width: 396px;
+      border: 7px #97804e solid;
+      height: 282px;
+    }
+    .address-container{
+      text-align: center;
+      width: 374px;
+      display: inline-block;
+      vertical-align: top;
+      color: #c7a457;
+      address{
+        font-style: normal;
+        p{
+          margin: 12px 0;
+        }
+        .company-name{
+          text-transform: uppercase;
+        }
+        .tel-number{
+          font-size: 18px;
+          color: #eacc8b;
+        }
+      }
+    }
+    .contact-us{
+      width: 410px;
+      float: right;
+      h4{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #f9e09e;
+        font-family: open_sanslight, Arial, sans-serif;
+        margin-top: 0;
+      }
+      form{
+        .name-input{
+          float: left;
+        }
+        .email-input{
+          float: right;
+        }
+      }
+      button{
+        margin-top: 19px;
+        color: #fff;
+        background: #b1965c;
+        padding: 9px 27px;
+        &:hover{
+          opacity: .9;
+        }
+        span{
+          &:after{
+            content: "\f178";
+            font-family: fontawesome, Arial, sans-serif;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

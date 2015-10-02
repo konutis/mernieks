@@ -24,16 +24,16 @@
         border-bottom: 1px #dfd9cf solid; }
       .prices .price-table > div .price-list li.special span {
         width: 490px;
-        font-family: open_sanssemibold; }
+        font-family: open_sanssemibold, Arial, sans-serif; }
       .prices .price-table > div .price-list li span {
         font-size: 14px;
         width: 440px;
         display: inline-block;
         line-height: 24px; }
         .prices .price-table > div .price-list li span strong {
-          font-family: open_sanssemibold; }
+          font-family: open_sanssemibold, Arial, sans-serif; }
         .prices .price-table > div .price-list li span.light-text {
-          font-family: open_sanslight; }
+          font-family: open_sanslight, Arial, sans-serif; }
       .prices .price-table > div .price-list li p {
         width: 80px;
         text-align: center;
@@ -41,6 +41,6 @@
         top: 10px;
         right: 0;
         margin: 0;
-        font-family: open_sanssemibold; }
+        font-family: open_sanssemibold, Arial, sans-serif; }
 
 /*# sourceMappingURL=prices.css.map */

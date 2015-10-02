@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,15 +11,17 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/base.css">
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <!--[if lte IE 9]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 </head>
 <body>
 <header class="site-header nav-down">
     <div class="wrapper">
         <a href="" class="brand">
-            <img src="./_temp/brand_logo.png" alt="" />
+            <img src="./_temp/brand_logo.png" alt="Mērnieks" />
         </a>
         <div class="site-nav">
             <div class="navigation">
@@ -44,7 +47,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#contacts">
                             <span>Kontakti</span>
                         </a>
                     </li>
@@ -96,10 +99,10 @@
             </div>
             <!--Controls-->
             <a class="left carousel-navigation" href="#">
-                <img src="./img/arrow_left.png" alt="Left">
+                <span>&#xf104;</span>
             </a>
-            <a class="right carousel-navigation"  href="#">
-                <img src="./img/arrow_right.png" alt="Right">
+            <a class="right carousel-navigation" href="#">
+                <span>&#xf105;</span>
             </a>
             <div class="control-buttons">
                 <button>
@@ -260,6 +263,59 @@
 <section class="about-us site-section">
     <div class="wrapper">
         <h1 class="section-header">Par mums<div class="anchor" id="about-us"></div></h1>
+        <div class="about-us-text">
+            <p>Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīvi padarīts darbs, lojalitāte pret katru klientu un demokrātiskas cenas kā uzņēmumiem, tā privātpersonām. Darbinieki mērniecības jomā strādā jau kopš 1996. gada, darba pieredze ir uzkrāta strādājot gan valsts iestādēs, gan privātos uzņēmumos, bet 2012. gadā apvienojoties mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA “Ventspils mērnieks”. Šajā īsajā uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā uzticams un profesionāls sadarbības partneris. To pierāda mūsu patstāvīgie klienti un viņu uzticība mūsu darbam.</p>
+        </div>
+        <div class="team-container cf">
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="./_temp/member1.png" alt="Edgars Ūdris">
+                </div>
+                <h1 class="member-name">
+                    Edgars Ūdris
+                </h1>
+                <div class="member-info">
+                    <p>tel. +371 29114401</p>
+                    <p>edgars@ventspilsmernieks.lv</p>
+                </div>
+                <div class="qualification">
+                    <div>
+                        <p>Zemes ierīcības darbi</p>
+                        <p>sertifikāta Nr. BA-72</p>
+                    </div>
+                    <div>
+                        <p>Kadastrālās uzmērīšanas darbi</p>
+                        <p>sertifikāta Nr. BB-73</p>
+                    </div>
+                </div>
+                <div class="about-member">
+                    <p>Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu kadastrālo uzmērīšanu un topogrāfisko izpēti būvniecības un teritorijas plānošanas vajadzībām, datu reģistrāciju un aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).</p>
+                    <p>Uzmērīšanas, zemes ierīcības darbu un NĪVKR dokumentācijas noformēšanu un kārtošanu, kā arī zemes robežu un situācijas plānu,  zemes robežu, situāciju  un apgrūtinājuma plānu izstrādi.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-img">
+                    <img src="./_temp/member2.png" alt="Tomass Soopargs">
+                </div>
+                <h1 class="member-name">
+                    Tomass Sooparg
+                </h1>
+                <div class="member-info">
+                    <p>tel. +371 29235562</p>
+                    <p>tomass@ventspilsmernieks.lv</p>
+                </div>
+                <div class="qualification">
+                    <div>
+                        <p>Ģeodēziskie darbi</p>
+                        <p>sertifikāta Nr. BC-71</p>
+                    </div>
+                </div>
+                <div class="about-member">
+                    <p>Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu ģeodēzisko izpēti būvniecības un teritorijas plānošanas vajadzībām, ģeodēzisko datu reģistrāciju un aktualizāciju Nekustamā īpašuma valsts kadastra reģistrā.</p>
+                    <p>Uzmērīs un izgatavos topogrāfiskos plānus objektiem, klientam vēlamajā merogā. Veiks virszemes un apakšzemes inženierkomunikāciju uzmērīšanu un attēlojuma saskaņošanu ar inženierkomunikāciju turētājiem. </p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -268,23 +324,118 @@
         <h1 class="section-header">Klienti<div class="anchor" id="clients"></div></h1>
         <ul class="client-list">
             <li>
-                <img src="./_temp/client_logo1.png" alt="Latvijas Republikas Zemkopības Ministrija">
+                <a href="#">
+                    <img src="./_temp/client_logo1.png" alt="Latvijas Republikas Zemkopības Ministrija">
+                </a>
             </li>
             <li>
-                <img src="./_temp/client_logo2.png" alt="Latvijas Valsts Meži">
+                <a href="#">
+                    <img src="./_temp/client_logo2.png" alt="Latvijas Valsts Meži">
+                </a>
             </li>
             <li>
-                <img src="./_temp/client_logo3.png" alt="Gibson">
+                <a href="#">
+                    <img src="./_temp/client_logo3.png" alt="Gibson">
+                </a>
             </li>
             <li>
-                <img src="./_temp/client_logo4.png" alt="Business Builder">
+                <a href="#">
+                    <img src="./_temp/client_logo4.png" alt="Business Builder">
+                </a>
             </li>
             <li>
-                <img src="./_temp/client_logo5.png" alt="Baltic Sustainable Forestry">
+                <a href="#">
+                    <img src="./_temp/client_logo5.png" alt="Baltic Sustainable Forestry">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo6.png" alt="Statoil">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo7.png" alt="Casamona">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo8.png" alt="Blue Roots">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo9.png" alt="Latvijas Valsts Ceļš">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo10.png" alt="Latvenergo">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo11.png" alt="Filterline">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo12.png" alt="LMT">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo13.png" alt="Ventspils Brīvostas pārvalde">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo14.png" alt="Ventbunkers">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo15.png" alt="Latio">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./_temp/client_logo16.png" alt="Ventspils Pilsētas Pašvaldība">
+                </a>
             </li>
         </ul>
     </div>
 </section>
+
+<footer class="site-footer site-section cf">
+    <div class="wrapper">
+        <h1 class="section-header">Kontakti<div class="anchor" id="contacts"></div></h1>
+        <div class="contact-info cf">
+            <iframe src="https://maps.google.com/maps?hl=en&amp;q=Ventspils, Vasarnīcu iela 9&amp;ie=UTF8&amp;t=m&amp;z=15&amp;iwloc=B&amp;output=embed"></iframe>
+            <div class="address-container">
+                <img src="./_temp/chuvziki.png" alt="Deal">
+                <address>
+                    <p class="company-name">sia "ventspils mērnieks"</p>
+                    <p class="tel-number">tālrunis: + 371 29235562, 29114401</p>
+                    <p class="email">e-pasts: birojs@ventspilsmernieks.lv</p>
+                    <p>Vasarnīcu iela 9</p>
+                    <p>Ventspils, LV-3601</p>
+                </address>
+            </div>
+            <div class="contact-us">
+                <h4>Sazināties ar mums</h4>
+                <form>
+                    <input type="text" class="styled-input name-input" placeholder="Vārds">
+                    <input type="text" class="styled-input email-input" placeholder="e-pasts">
+                    <textarea name="message" class="styled-textarea" cols="30" rows="8" placeholder="Teksts..."></textarea>
+                </form>
+                <button>
+                    <span>Sūtīt</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

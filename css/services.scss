@@ -8,6 +8,7 @@
     >li{
       display: inline-block;
       text-align: left;
+      vertical-align: top;
       >img{
         vertical-align: top;
       }
@@ -28,7 +29,7 @@
             span{
               line-height: 24px;
               color: #534c38;
-              font-family: open_sanslight;
+              font-family: open_sanslight, Arial, sans-serif;
             }
 
             &:after{

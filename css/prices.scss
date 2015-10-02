@@ -32,7 +32,7 @@
           &.special{
             span{
               width: 490px;
-              font-family: open_sanssemibold;
+              font-family: open_sanssemibold, Arial, sans-serif;
             }
           }
           span{
@@ -41,10 +41,10 @@
             display: inline-block;
             line-height: 24px;
             strong{
-              font-family: open_sanssemibold;
+              font-family: open_sanssemibold, Arial, sans-serif;
             }
             &.light-text{
-              font-family: open_sanslight;
+              font-family: open_sanslight, Arial, sans-serif;
             }
           }
           p{
@@ -54,10 +54,12 @@
             top: 10px;
             right: 0;
             margin: 0;
-            font-family: open_sanssemibold;
+            font-family: open_sanssemibold, Arial, sans-serif;
           }
         }
       }
     }
   }
 }
+
+

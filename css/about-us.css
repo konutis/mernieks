@@ -2,5 +2,73 @@
   background: url(../_temp/about_us_bg.png); }
   .about-us .section-header {
     border-bottom-color: #c6a357; }
+  .about-us .about-us-text {
+    text-align: left;
+    line-height: 32px;
+    font-size: 18px;
+    color: #fff;
+    font-family: open_sanslight, Arial, sans-serif;
+    padding-bottom: 20px; }
+  .about-us .team-container .team-member {
+    width: 568px;
+    float: left; }
+    .about-us .team-container .team-member:last-child {
+      float: right; }
+    .about-us .team-container .team-member .member-img {
+      display: inline-block;
+      height: 166px;
+      width: 166px;
+      border-radius: 50%;
+      border: 7px #97804e solid;
+      position: relative;
+      overflow: hidden; }
+      .about-us .team-container .team-member .member-img img {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .about-us .team-container .team-member .member-name {
+      color: #c7a457;
+      font-size: 36px;
+      font-family: open_sanslight, Arial, sans-serif;
+      font-weight: 400;
+      width: 336px;
+      padding-bottom: 10px;
+      border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+      margin: auto; }
+    .about-us .team-container .team-member .member-info {
+      color: #c7a457;
+      font-size: 18px;
+      margin: 12px 0 25px; }
+      .about-us .team-container .team-member .member-info p {
+        margin: 0; }
+    .about-us .team-container .team-member .qualification {
+      height: 79px;
+      background: #624e36; }
+      .about-us .team-container .team-member .qualification > div {
+        padding-top: 20px;
+        box-sizing: border-box;
+        text-align: left;
+        display: inline-block;
+        position: relative;
+        margin: 0 40px 0 65px; }
+        .about-us .team-container .team-member .qualification > div:before {
+          content: "";
+          background: url(../_temp/sertif.png);
+          height: 39px;
+          width: 28px;
+          position: absolute;
+          left: -45px;
+          top: 22px; }
+        .about-us .team-container .team-member .qualification > div p {
+          margin: 0;
+          font-size: 13px;
+          color: #eadfcd; }
+    .about-us .team-container .team-member .about-member {
+      padding: 10px 0 35px;
+      text-align: left;
+      color: #fff;
+      font-family: open_sanslight, Arial, sans-serif; }
+      .about-us .team-container .team-member .about-member p {
+        line-height: 30px; }
 
 /*# sourceMappingURL=about-us.css.map */

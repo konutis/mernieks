@@ -1,0 +1,7 @@
+.service-list >li{
+    width: 32%;
+}
+
+.client-list li{
+  display: inline-block;
+}

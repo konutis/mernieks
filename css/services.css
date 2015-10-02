@@ -6,7 +6,8 @@
   background-image: url(../_temp/body_bg.png); }
   .services .service-list > li {
     display: inline-block;
-    text-align: left; }
+    text-align: left;
+    vertical-align: top; }
     .services .service-list > li > img {
       vertical-align: top; }
     .services .service-list > li > div {
@@ -24,7 +25,7 @@
         .services .service-list > li > div ul li span {
           line-height: 24px;
           color: #534c38;
-          font-family: open_sanslight; }
+          font-family: open_sanslight, Arial, sans-serif; }
         .services .service-list > li > div ul li:after {
           content: "";
           position: absolute;

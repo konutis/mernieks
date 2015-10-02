@@ -2,7 +2,11 @@
   height: 594px;
   background: url("../_temp/slider_bg1.png");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-box-shadow: 0px 1px 3px 0px #5c5c5c;
+  -moz-box-shadow: 0px 1px 3px 0px #5c5c5c;
+  box-shadow: 0px 1px 3px 0px #5c5c5c;
+  position: relative; }
   .carousel-container .carousel {
     position: relative; }
     .carousel-container .carousel .carousel-inner {
@@ -41,11 +45,27 @@
             font-size: 24px; }
     .carousel-container .carousel .carousel-navigation {
       position: absolute;
-      top: 50%; }
+      top: 0;
+      height: 100%;
+      width: 85px;
+      color: rgba(255, 255, 255, 0.3);
+      -webkit-transition: all ease .2s;
+      transition: all ease .2s; }
+      .carousel-container .carousel .carousel-navigation:hover {
+        color: rgba(255, 255, 255, 0.8); }
       .carousel-container .carousel .carousel-navigation.left {
         left: 0; }
+        .carousel-container .carousel .carousel-navigation.left span {
+          left: 0; }
       .carousel-container .carousel .carousel-navigation.right {
         right: 0; }
+        .carousel-container .carousel .carousel-navigation.right span {
+          right: 0; }
+      .carousel-container .carousel .carousel-navigation span {
+        font-family: fontawesome, Arial, sans-serif;
+        font-size: 60px;
+        top: 50%;
+        position: absolute; }
     .carousel-container .carousel .control-buttons {
       position: absolute;
       bottom: 13px;
@@ -57,11 +77,12 @@
         height: 14px;
         width: 14px;
         border-radius: 50%;
-        background: rgba(0, 0, 0, 0.2);
-        margin: 5px; }
+        background: rgba(135, 115, 75, 0.5);
+        margin: 5px;
+        vertical-align: top; }
         .carousel-container .carousel .control-buttons button.active:before {
           content: "";
-          background: rgba(255, 200, 145, 0.4);
+          background: rgba(255, 255, 255, 0.4);
           height: 10px;
           width: 10px;
           position: absolute;
