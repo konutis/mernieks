@@ -49,4 +49,13 @@
           font-family: fontawesome, Arial, sans-serif;
           margin-left: 5px; }
 
+.error-box {
+  background: #624e36;
+  color: #eacc8b;
+  padding: 0 10px;
+  margin-bottom: 20px; }
+
+#error-list li {
+  padding: 10px 0; }
+
 /*# sourceMappingURL=footer.css.map */

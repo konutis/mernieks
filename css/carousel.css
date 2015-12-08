@@ -1,93 +1,130 @@
-.carousel-container {
+.carousel {
   height: 594px;
-  background: url("../_temp/slider_bg1.png");
-  background-size: cover;
-  background-position: center;
-  -webkit-box-shadow: 0px 1px 3px 0px #5c5c5c;
-  -moz-box-shadow: 0px 1px 3px 0px #5c5c5c;
-  box-shadow: 0px 1px 3px 0px #5c5c5c;
-  position: relative; }
-  .carousel-container .carousel {
-    position: relative; }
-    .carousel-container .carousel .carousel-inner {
-      position: relative;
-      height: 594px;
-      margin: 0 85px; }
-      .carousel-container .carousel .carousel-inner .item {
-        display: none;
-        position: absolute;
-        color: #f5f2eb; }
-        .carousel-container .carousel .carousel-inner .item.active {
-          display: block; }
-        .carousel-container .carousel .carousel-inner .item.item-1 {
-          top: 250px;
-          left: 0; }
-        .carousel-container .carousel .carousel-inner .item.item-2 {
-          top: 225px;
-          left: 15px; }
-        .carousel-container .carousel .carousel-inner .item.item-3 {
-          text-align: right;
-          top: 250px;
-          right: 0; }
-        .carousel-container .carousel .carousel-inner .item h1 {
-          font-size: 44px;
-          font-weight: normal;
-          background: rgba(0, 0, 0, 0.5);
-          padding: 5px 15px;
-          margin: 20px 0;
-          display: inline-block; }
-        .carousel-container .carousel .carousel-inner .item > div {
-          background: rgba(0, 0, 0, 0.5);
-          padding: 11px 17px; }
-          .carousel-container .carousel .carousel-inner .item > div p {
-            margin: 0;
-            line-height: 38px;
-            font-size: 24px; }
-    .carousel-container .carousel .carousel-navigation {
+  -webkit-box-shadow: 0 1px 3px 0 #5c5c5c;
+  -moz-box-shadow: 0 1px 3px 0 #5c5c5c;
+  box-shadow: 0 1px 3px 0 #5c5c5c;
+  position: relative;
+  overflow: hidden; }
+
+.carousel-inner {
+  position: relative;
+  height: 594px;
+  white-space: nowrap;
+  transition: all 1s; }
+  .carousel-inner .item {
+    display: inline-block;
+    width: 100%;
+    color: #f5f2eb;
+    position: relative;
+    height: 594px; }
+    .carousel-inner .item.item-1 {
+      background: url("../_temp/slider_bg1.png") center no-repeat;
+      background-size: cover; }
+      .carousel-inner .item.item-1 .item-inner {
+        top: 250px;
+        left: 85px; }
+    .carousel-inner .item.item-2 {
+      background: url("../_temp/slider_bg2.png") center no-repeat;
+      background-size: cover; }
+      .carousel-inner .item.item-2 .item-inner {
+        top: 225px;
+        left: 100px; }
+    .carousel-inner .item.item-3 {
+      background: url("../_temp/slider_bg3.png") center no-repeat;
+      background-size: cover; }
+      .carousel-inner .item.item-3 .item-inner {
+        text-align: right;
+        top: 250px;
+        right: 85px; }
+    .carousel-inner .item .item-inner {
+      position: absolute; }
+      .carousel-inner .item .item-inner > div {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 11px 17px; }
+        .carousel-inner .item .item-inner > div p {
+          margin: 0;
+          line-height: 38px;
+          font-size: 24px; }
+    .carousel-inner .item h1 {
+      font-size: 44px;
+      font-weight: normal;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px 15px;
+      margin: 20px 0;
+      display: inline-block; }
+
+.controls {
+  width: 1200px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute; }
+
+.carousel-navigation {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 85px;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s; }
+  .carousel-navigation:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 85px;
+    width: 65px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.2); }
+  .carousel-navigation.left {
+    left: 0; }
+    .carousel-navigation.left span {
+      left: 15px; }
+    .carousel-navigation.left:after {
+      left: 0; }
+  .carousel-navigation.right {
+    right: 0; }
+    .carousel-navigation.right span {
+      right: 15px; }
+    .carousel-navigation.right:after {
+      right: 0; }
+  .carousel-navigation span {
+    font-family: fontawesome, Arial, sans-serif;
+    font-size: 60px;
+    line-height: 65px;
+    height: 65px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute; }
+
+.control-buttons {
+  position: absolute;
+  bottom: 13px;
+  width: 100%;
+  text-align: center; }
+  .control-buttons button {
+    box-sizing: inherit;
+    position: relative;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 8px;
+    vertical-align: top;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3); }
+    .control-buttons button.active:before {
+      content: "";
+      background: rgba(255, 255, 255, 0.4);
+      height: 10px;
+      width: 10px;
       position: absolute;
-      top: 0;
-      height: 100%;
-      width: 85px;
-      color: rgba(255, 255, 255, 0.3);
-      -webkit-transition: all ease .2s;
-      transition: all ease .2s; }
-      .carousel-container .carousel .carousel-navigation:hover {
-        color: rgba(255, 255, 255, 0.8); }
-      .carousel-container .carousel .carousel-navigation.left {
-        left: 0; }
-        .carousel-container .carousel .carousel-navigation.left span {
-          left: 0; }
-      .carousel-container .carousel .carousel-navigation.right {
-        right: 0; }
-        .carousel-container .carousel .carousel-navigation.right span {
-          right: 0; }
-      .carousel-container .carousel .carousel-navigation span {
-        font-family: fontawesome, Arial, sans-serif;
-        font-size: 60px;
-        top: 50%;
-        position: absolute; }
-    .carousel-container .carousel .control-buttons {
-      position: absolute;
-      bottom: 13px;
-      left: 50%;
-      margin-left: -37px; }
-      .carousel-container .carousel .control-buttons button {
-        box-sizing: inherit;
-        position: relative;
-        height: 14px;
-        width: 14px;
-        border-radius: 50%;
-        background: rgba(135, 115, 75, 0.5);
-        margin: 5px;
-        vertical-align: top; }
-        .carousel-container .carousel .control-buttons button.active:before {
-          content: "";
-          background: rgba(255, 255, 255, 0.4);
-          height: 10px;
-          width: 10px;
-          position: absolute;
-          border-radius: 50%;
-          top: 2px;
-          left: 2px; }
+      border-radius: 50%;
+      top: 2px;
+      left: 2px; }
 
 /*# sourceMappingURL=carousel.css.map */

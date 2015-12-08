@@ -13,83 +13,80 @@
     <link rel="stylesheet" href="css/base.css">
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-    <!--[if lte IE 9]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 </head>
 <body>
-<header class="site-header nav-down">
+<header class="site-header nav-down" id="sakums">
     <div class="wrapper">
         <a href="" class="brand">
             <img src="./_temp/brand_logo.png" alt="Mērnieks" />
         </a>
         <div class="site-nav">
-            <div class="navigation">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span>Sākums</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#services">
-                            <span>Pakalpojumi</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about-us">
-                            <span>Par mums</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#clients">
-                            <span>Klienti</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contacts">
-                            <span>Kontakti</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="navigation">
+                <li>
+                    <a href="#sakums" class="smoothScroll">
+                        <span>Sākums</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" class="smoothScroll">
+                        <span>Pakalpojumi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about-us" class="smoothScroll">
+                        <span>Par mums</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#clients" class="smoothScroll">
+                        <span>Klienti</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacts" class="smoothScroll">
+                        <span>Kontakti</span>
+                    </a>
+                </li>
+            </ul>
             <div class="languages">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span>RU</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>EN</span>
-                        </a>
-                    </li>
-                </ul>
+                <a href="#">
+                    <span>RU</span>
+                </a>
+                <a href="#">
+                    <span>EN</span>
+                </a>
             </div>
         </div>
     </div>
 </header>
-<div class="carousel-container">
-    <div class="wrapper">
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="item item-1 active">
+
+<div class="carousel">
+    <div class="carousel-inner">
+        <div class="item item-1">
+            <div class="wrapper">
+                <div class="item-inner">
                     <h1>Mērniecība</h1>
                     <div>
                         <p>Zemesgabalu robežu uzmērīšana</p>
                         <p>zemes un būvju reģistrācijai</p>
                     </div>
                 </div>
-                <div class="item item-2">
+            </div>
+        </div
+        ><div class="item item-2">
+            <div class="wrapper">
+                <div class="item-inner">
                     <h1>Ģeodēzija</h1>
                     <div>
                         <p>Apakšzemes komunikāciju</p>
                         <p>uzmērīšana un saskaņošana</p>
                     </div>
                 </div>
-
-                <div class="item item-3">
+            </div>
+        </div
+        ><div class="item item-3">
+            <div class="wrapper">
+                <div class="item-inner">
                     <h1>Zemes ierīcība</h1>
                     <div>
                         <p>Aktualizējam un izgatavojam zemes robežu,</p>
@@ -97,30 +94,27 @@
                     </div>
                 </div>
             </div>
-            <!--Controls-->
-            <a class="left carousel-navigation" href="#">
-                <span>&#xf104;</span>
-            </a>
-            <a class="right carousel-navigation" href="#">
-                <span>&#xf105;</span>
-            </a>
-            <div class="control-buttons">
-                <button>
-                </button>
-                <button class="active">
-                </button>
-                <button>
-                </button>
-            </div>
+        </div>
+    </div>
+    <!--Controls-->
+    <div class="controls">
+        <button class="left carousel-navigation" type="button">
+            <span>&#xf104;</span>
+        </button>
+        <button class="right carousel-navigation" type="button">
+            <span>&#xf105;</span>
+        </button>
+        <div class="control-buttons">
         </div>
     </div>
 </div>
 
-<section class="services site-section">
+
+<section class="services site-section" id="services">
     <div class="wrapper">
-        <h1 class="section-header">Pakalpojumi <div class="anchor" id="services"></div></h1>
-        <ul class="service-list">
-            <li>
+        <h1 class="section-header">Pakalpojumi</h1>
+        <ul class="service-list cf">
+            <li class="service-list-item">
                 <img src="./_temp/icon1.png" alt="">
                 <div>
                     <h2>Ģeodēzija</h2>
@@ -143,7 +137,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li class="service-list-item">
                 <img src="./_temp/icon2.png" alt="">
                 <div>
                     <h2>Mērniecība</h2>
@@ -172,7 +166,7 @@
                     </ul>
                 </div>
             </li>
-            <li>
+            <li class="service-list-item">
                 <img src="./_temp/icon2.png" alt="">
                 <div>
                     <h2>Zemes ierīcība</h2>
@@ -260,9 +254,9 @@
     </div>
 </section>
 
-<section class="about-us site-section">
+<section class="about-us site-section" id="about-us">
     <div class="wrapper">
-        <h1 class="section-header">Par mums<div class="anchor" id="about-us"></div></h1>
+        <h1 class="section-header">Par mums</h1>
         <div class="about-us-text">
             <p>Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīvi padarīts darbs, lojalitāte pret katru klientu un demokrātiskas cenas kā uzņēmumiem, tā privātpersonām. Darbinieki mērniecības jomā strādā jau kopš 1996. gada, darba pieredze ir uzkrāta strādājot gan valsts iestādēs, gan privātos uzņēmumos, bet 2012. gadā apvienojoties mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA “Ventspils mērnieks”. Šajā īsajā uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā uzticams un profesionāls sadarbības partneris. To pierāda mūsu patstāvīgie klienti un viņu uzticība mūsu darbam.</p>
         </div>
@@ -319,9 +313,9 @@
     </div>
 </section>
 
-<section class="clients site-section">
+<section class="clients site-section" id="clients">
     <div class="wrapper">
-        <h1 class="section-header">Klienti<div class="anchor" id="clients"></div></h1>
+        <h1 class="section-header">Klienti</h1>
         <ul class="client-list">
             <li>
                 <a href="#">
@@ -407,9 +401,9 @@
     </div>
 </section>
 
-<footer class="site-footer site-section cf">
+<footer class="site-footer site-section cf" id="contacts">
     <div class="wrapper">
-        <h1 class="section-header">Kontakti<div class="anchor" id="contacts"></div></h1>
+        <h1 class="section-header">Kontakti</h1>
         <div class="contact-info cf">
             <iframe src="https://maps.google.com/maps?hl=en&amp;q=Ventspils, Vasarnīcu iela 9&amp;ie=UTF8&amp;t=m&amp;z=15&amp;iwloc=B&amp;output=embed"></iframe>
             <div class="address-container">
@@ -424,18 +418,29 @@
             </div>
             <div class="contact-us">
                 <h4>Sazināties ar mums</h4>
-                <form>
+                <form id="form">
+                    <div class="error-box">
+                        <ul id="error-list">
+                        </ul>
+                    </div>
                     <input type="text" class="styled-input name-input" placeholder="Vārds">
                     <input type="text" class="styled-input email-input" placeholder="e-pasts">
-                    <textarea name="message" class="styled-textarea" cols="30" rows="8" placeholder="Teksts..."></textarea>
+                    <textarea name="message" class="styled-textarea message" cols="30" rows="8" placeholder="Teksts..."></textarea>
+                    <button class="form-submit" type="button">
+                        <span>Sūtīt</span>
+                    </button>
                 </form>
-                <button>
-                    <span>Sūtīt</span>
-                </button>
             </div>
         </div>
     </div>
 </footer>
+<a href="#sakums" class="smoothScroll">
+    <div class="arrowtop">
+        <img src="_temp/buttontostart.png" alt="To top">
+    </div>
+</a>
+
+<script type="text/javascript" src="js/functions.js"></script>
 
 </body>
 </html>

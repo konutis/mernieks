@@ -1,40 +1,40 @@
-.services .service-list {
+.service-list {
   padding: 50px 0 45px;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-  columns: 3;
   background-image: url(../_temp/body_bg.png); }
-  .services .service-list > li {
-    display: inline-block;
-    text-align: left;
+
+.service-list-item {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 33.3334%;
+  float: left; }
+  .service-list-item > img {
     vertical-align: top; }
-    .services .service-list > li > img {
-      vertical-align: top; }
-    .services .service-list > li > div {
-      display: inline-block;
-      max-width: 290px;
-      margin-left: 20px; }
-      .services .service-list > li > div h2 {
-        margin: 0 0 15px 0;
-        color: #473a15;
-        text-transform: uppercase; }
-      .services .service-list > li > div ul li {
-        position: relative;
-        margin-bottom: 10px;
-        padding-bottom: 10px; }
-        .services .service-list > li > div ul li span {
-          line-height: 24px;
-          color: #534c38;
-          font-family: open_sanslight, Arial, sans-serif; }
-        .services .service-list > li > div ul li:after {
-          content: "";
-          position: absolute;
-          width: 56px;
-          height: 1px;
-          background: rgba(0, 0, 0, 0.2);
-          bottom: -1px;
-          left: 0; }
-        .services .service-list > li > div ul li:last-child:after {
-          display: none; }
+  .service-list-item > div {
+    display: inline-block;
+    max-width: 290px;
+    margin-left: 20px; }
+    .service-list-item > div h2 {
+      margin: 0 0 15px 0;
+      color: #473a15;
+      text-transform: uppercase; }
+    .service-list-item > div ul li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+      .service-list-item > div ul li span {
+        line-height: 24px;
+        color: #534c38;
+        font-family: open_sanslight, Arial, sans-serif; }
+      .service-list-item > div ul li:after {
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.2);
+        bottom: -1px;
+        left: 0; }
+      .service-list-item > div ul li:last-child:after {
+        display: none; }
 
 /*# sourceMappingURL=services.css.map */

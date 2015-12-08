@@ -1,50 +1,48 @@
-.services{
-  .service-list {
-    padding: 50px 0 45px;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    columns: 3;
-    background-image: url(../_temp/body_bg.png);
-    >li{
-      display: inline-block;
-      text-align: left;
-      vertical-align: top;
-      >img{
-        vertical-align: top;
-      }
-      >div{
-        display: inline-block;
-        max-width: 290px;
-        margin-left: 20px;
-        h2{
-          margin: 0 0 15px 0;
-          color: #473a15;
-          text-transform: uppercase;
-        }
-        ul{
-          li{
-            position: relative;
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            span{
-              line-height: 24px;
-              color: #534c38;
-              font-family: open_sanslight, Arial, sans-serif;
-            }
+.service-list {
+  padding: 50px 0 45px;
+  background-image: url(../_temp/body_bg.png);
 
-            &:after{
-              content: "";
-              position: absolute;
-              width: 56px;
-              height: 1px;
-              background: rgba(0, 0, 0, .2);
-              bottom: -1px;
-              left: 0;
-            }
-            &:last-child:after{
-              display: none;
-            }
-          }
+}
+.service-list-item{
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 33.3334%;
+  float: left;
+  >img{
+    vertical-align: top;
+  }
+  >div{
+    display: inline-block;
+    max-width: 290px;
+    margin-left: 20px;
+    h2{
+      margin: 0 0 15px 0;
+      color: #473a15;
+      text-transform: uppercase;
+    }
+    ul{
+      li{
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        span{
+          line-height: 24px;
+          color: #534c38;
+          font-family: open_sanslight, Arial, sans-serif;
+        }
+
+        &:after{
+          content: "";
+          position: absolute;
+          width: 56px;
+          height: 1px;
+          background: rgba(0, 0, 0, .2);
+          bottom: -1px;
+          left: 0;
+        }
+        &:last-child:after{
+          display: none;
         }
       }
     }
