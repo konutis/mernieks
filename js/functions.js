@@ -133,7 +133,8 @@ function smoothScroll() {
             var id = this.getAttribute("href").substr(1),
                 anchor = document.getElementById(id),
                 distanceFromTop = anchor.offsetTop,
-                distance = anchor.offsetTop - document.documentElement.scrollTop,
+                scrolltoTop = document.documentElement.scrollTop || document.body.scrollTop,
+                distance = anchor.offsetTop - scrolltoTop,
                 docHeight = document.documentElement.offsetHeight,
                 screenHeight = document.documentElement.clientHeight,
                 step = 20;
@@ -141,16 +142,18 @@ function smoothScroll() {
             function scroll() {
                 setTimeout(function() {
 
-                    var newDistance = anchor.offsetTop - document.documentElement.scrollTop;
+                    var newDistance = anchor.offsetTop - (document.documentElement.scrollTop || document.body.scrollTop);
 
-                    if ((document.documentElement.scrollTop + screenHeight) >= docHeight) {
-                        return;
-                    }
 
                     if (distance > 0) {
                         if (newDistance >= 20) {
-                            window.scrollBy(0, step);
-                            scroll();
+
+                            if (((document.documentElement.scrollTop || document.body.scrollTop) + screenHeight) >= docHeight) {
+                                window.scrollTo(0, docHeight-screenHeight);
+                            } else {
+                                window.scrollBy(0, step);
+                                scroll();
+                            }
                         } else {
                             window.scrollTo(0, distanceFromTop);
                         }
@@ -172,3 +175,4 @@ function smoothScroll() {
 }
 
 smoothScroll();
+

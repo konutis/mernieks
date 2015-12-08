@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8965fe52-67e1-4c01-93ca-d4a05e0ea91d" name="Default" comment="Almost done">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/carousel.css.map" afterPath="$PROJECT_DIR$/css/carousel.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/carousel.css" afterPath="$PROJECT_DIR$/css/carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/carousel.scss" afterPath="$PROJECT_DIR$/css/carousel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/footer.css.map" afterPath="$PROJECT_DIR$/css/footer.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/footer.css" afterPath="$PROJECT_DIR$/css/footer.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/footer.scss" afterPath="$PROJECT_DIR$/css/footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/functions.js" afterPath="$PROJECT_DIR$/js/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/header.css.map" afterPath="$PROJECT_DIR$/css/header.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/header.css" afterPath="$PROJECT_DIR$/css/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/header.scss" afterPath="$PROJECT_DIR$/css/header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/services.css.map" afterPath="$PROJECT_DIR$/css/services.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/services.css" afterPath="$PROJECT_DIR$/css/services.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/services.scss" afterPath="$PROJECT_DIR$/css/services.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mernieks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.083333">
-              <caret line="428" column="61" selection-start-line="428" selection-start-column="61" selection-end-line="428" selection-end-column="61" />
+            <state vertical-scroll-proportion="-11.458333">
+              <caret line="426" column="52" selection-start-line="426" selection-start-column="52" selection-end-line="426" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -53,10 +39,9 @@
       <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.569044">
-              <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+            <state vertical-scroll-proportion="1.5427215">
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
               <folding>
-                <element signature="e#16#2338#0" expanded="false" />
                 <element signature="e#2429#3289#0" expanded="false" />
                 <element signature="n#!!block;n#printSuccess#0" expanded="false" />
                 <element signature="n#!!block;n#printError#0" expanded="false" />
@@ -149,7 +134,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -199,6 +183,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -699,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37795275">
           <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,18 +697,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.083333">
-          <caret line="428" column="61" selection-start-line="428" selection-start-column="61" selection-end-line="428" selection-end-column="61" />
+        <state vertical-scroll-proportion="-11.458333">
+          <caret line="426" column="52" selection-start-line="426" selection-start-column="52" selection-end-line="426" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.569044">
-          <caret line="140" column="31" selection-start-line="140" selection-start-column="31" selection-end-line="140" selection-end-column="31" />
+        <state vertical-scroll-proportion="1.5427215">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
-            <element signature="e#16#2338#0" expanded="false" />
             <element signature="e#2429#3289#0" expanded="false" />
             <element signature="n#!!block;n#printSuccess#0" expanded="false" />
             <element signature="n#!!block;n#printError#0" expanded="false" />
