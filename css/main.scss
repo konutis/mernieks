@@ -90,7 +90,9 @@ button{
     color: #b1965c;
   }
 }
-
+.arrowtop.hidden {
+  bottom: -50px;
+}
 .arrowtop{
   position: fixed;
   bottom: 0;
@@ -99,6 +101,11 @@ button{
   width: 50px;
   background: rgba(0,0,0, .4);
   z-index: 1;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  &:hover {
+    background: rgba(0,0,0, .6);
+  }
   img {
     position: absolute;
     top: 0;

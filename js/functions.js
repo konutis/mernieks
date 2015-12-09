@@ -63,9 +63,24 @@ var imgSlider = {
     'activeButton': function() {
         this.buttonContainer.getElementsByClassName("active")[0].classList.remove("active");
         this.buttonContainer.getElementsByTagName("button")[this.current].className += "active";
+    },
+    'autoSlide': function() {
+        var that = this;
+        setTimeout(function(){
+            that.showNext();
+            that.activeButton();
+            that.autoSlide();
+        }, 4500)
+    },
+    'mouseInside': function() {
+        this.on = function () {
+            console.log("hi");
+        }
     }
 };
 imgSlider.init();
+imgSlider.autoSlide();
+
 
 document.getElementsByClassName("form-submit")[0].onclick = function(){
 
@@ -127,6 +142,34 @@ function smoothScroll() {
     for ($btn in $data) {
         $buttons.push($data[$btn]);
     }
+
+    function toggleArrow() {
+        var arrow = document.getElementsByClassName("arrowtop")[0];
+        var position = document.documentElement.scrollTop || document.body.scrollTop;
+        window.onscroll = function() {
+            var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if(position < 250) {
+                arrow.classList.add("hidden")
+            } else {
+                arrow.classList.remove("hidden")
+            }
+            position = scroll;
+        };
+    }
+    toggleArrow();
+
+
+
+    //window.onscroll = function(){
+    //    var arrow = document.getElementsByClassName("arrowtop")[0];
+    //    if (document.documentElement.scrollTop || document.body.scrollTop > 1000) {
+    //        arrow.classList.remove("hidden");
+    //    } else {
+    //        arrow.classList.add("hidden");
+    //    }
+    //};
+
+
 
     $buttons.forEach(function ($button) {
         $button.onclick = function() {
